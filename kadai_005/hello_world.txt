@@ -1,0 +1,17 @@
+hondakento@MacBook-Pro ~ % mkdir git_challenge
+hondakento@MacBook-Pro ~ % cd git_challenge
+hondakento@MacBook-Pro git_challenge % echo Hello, World >> hello_world.txt             
+hondakento@MacBook-Pro git_challenge % git add hello_world.txt
+hondakento@MacBook-Pro git_challenge % git commit -m Hello,worldをコミット
+[master (root-commit) 9a30290] Hello,worldをコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+hondakento@MacBook-Pro git_challenge % echo こんにちは、世界 >> hello_world.txt
+hondakento@MacBook-Pro git_challenge % git add hello_world.txt                   
+hondakento@MacBook-Pro git_challenge % git commit -m 日本語訳をコミット
+[master 0d5c991] 日本語訳をコミット
+ 1 file changed, 1 insertion(+)
+hondakento@MacBook-Pro git_challenge % git log --oneline
+0d5c991 (HEAD -> master) 日本語訳をコミット
+9a30290 Hello,worldをコミット
+
