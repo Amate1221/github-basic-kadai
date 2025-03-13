@@ -1,0 +1,29 @@
+hondakento@MacBook-Pro ~ % mkdir git_challenge
+hondakento@MacBook-Pro ~ % cd git_challenge
+hondakento@MacBook-Pro git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/hondakento/git_challenge/.git/
+hondakento@MacBook-Pro git_challenge % echo Hello, World > hello_world.txt    
+hondakento@MacBook-Pro git_challenge % git add hello_world.txt              
+hondakento@MacBook-Pro git_challenge % git commit -m 1st commit               
+[master (root-commit) b9a810d] 1st commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+hondakento@MacBook-Pro git_challenge % echo こんにちは、世界 > hello_world.txt
+hondakento@MacBook-Pro git_challenge % git add hello_world.txt                  
+hondakento@MacBook-Pro git_challenge % git commit -m 2nd commit              
+[master ce99df4] 2nd  commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+hondakento@MacBook-Pro git_challenge % git log --oneline                        
+ce99df4 (HEAD -> master) 2nd  commit
+b9a810d 1st commit
+
